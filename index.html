@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,30 +153,46 @@
         <h3>E. Barlines</h3>
         <p>By the end of a measure, all notes are arranged and closed with a measure marker (|,).</p>
 
-    </div>
-
-       
-
-    <div class="section-block">
-        <h2>From Data to Language: An Example</h2>
-        <p><strong>The Transformation:</strong></p>
-        <ul>
-            <li><strong>Raw MIDI Data:</strong> Bar 1, Pitch 60, Start 1920, End 2160, Velocity 85</li>
-            <li><strong>Final Symbol:</strong> <code style="color: var(--secondary); font-weight: bold;">00C402@5|,</code></li>
-        </ul>
+        <h3>F. From Data to Language: An Example</h3>
+        <div class="symbol-callout">
+            <strong>Raw MIDI Data:</strong>
+            Bar 1, Pitch 60, Start 1920, End 2160, Velocity 85
+        </div>
+        <br>
+        <div class="symbol-callout">
+            <strong>Final Symbol:</strong>
+            00C402@5|,
+        </div>
     </div>
 
     <h2>Demo Showcase</h2>
     <div class="demo-section">
+        </div>
+            <p>I fine-tuned a base LLM on over 80,000 curated music clips using LoRA (Low-Rank Adaptation). All data were converted into the self-designed music symbolic system, which encodes timing, pitch, duration, and dynamics into compact, language-like tokens. Both fine-tuning and inference use a continuation-based objective to match the autoregressive nature of large language models, enabling stable next-token prediction over long symbolic music sequences.</p>
+         </div>
+        </div>
+            <h3>Demo 1</h3>
+        </div>
         <div class="demo-card">
             <span class="tag tag-input">Original Input</span>
-            <h3>Human Motif</h3>
-            <audio controls><source src="audio/input.mp3" type="audio/mpeg"></audio>
+            <h3>Human Motif Input</h3>
+            <audio controls><source src="/Users/gaojiaying/dataprocess/output_result_2.wav" type="audio/mpeg"></audio>
         </div>
         <div class="demo-card">
             <span class="tag tag-ai">AI Continuation</span>
-            <h3>MIDILLM Reasoning</h3>
-            <audio controls><source src="audio/output.mp3" type="audio/mpeg"></audio>
+            <h3>MIDI-LLM Reasoning Output</h3>
+            <audio controls><source src="/Users/gaojiaying/dataprocess/output_result_3.wav" type="audio/mpeg"></audio>
+        </div>
+        <h3>Demo 2</h3>
+        <div class="demo-card">
+            <span class="tag tag-input">Original Input</span>
+            <h3>Human Motif Input</h3>
+            <audio controls><source src="/Users/gaojiaying/dataprocess/output_result.wav" type="audio/mpeg"></audio>
+        </div>
+        <div class="demo-card">
+            <span class="tag tag-ai">AI Continuation</span>
+            <h3>MIDI-LLM Reasoning Output</h3>
+            <audio controls><source src="/Users/gaojiaying/dataprocess/output_result_2.wav" type="audio/mpeg"></audio>
         </div>
     </div>
 
